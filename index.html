@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anubhav Kumar Kesharwani — Data Analyst · AI Engineer · Agentic AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F8F9FA;
+    --surface: #FFFFFF;
+    --surface2: #F1F3F5;
+    --border: #E5E7EB;
+    --border2: #D1D5DB;
+    --text: #111827;
+    --text2: #374151;
+    --text3: #6B7280;
+    --accent: #185FA5;
+    --accent-bg: #EFF6FF;
+    --accent-border: #BFDBFE;
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Inter', sans-serif;
+    --radius: 10px;
+    --radius-lg: 14px;
+  }
+
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── Layout ─────────────────────────────────────── */
+  .page { max-width: 860px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+
+  /* ── Header ─────────────────────────────────────── */
+  .header { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+  .header-left {}
+  .name { font-size: 2rem; font-weight: 600; letter-spacing: -0.5px; color: var(--text); }
+  .role { font-size: 0.8rem; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text3); margin-top: 4px; }
+  .contact-row { display: flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+  .contact-chip { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text2); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 5px 12px; transition: border-color 0.15s; }
+  .contact-chip:hover { border-color: var(--border2); text-decoration: none; }
+  .contact-chip svg { width: 13px; height: 13px; }
+
+  /* ── Stat cards ──────────────────────────────────── */
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 2.5rem; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; text-align: center; }
+  .stat-num { font-size: 1.35rem; font-weight: 600; color: var(--accent); font-family: var(--mono); }
+  .stat-label { font-size: 11px; color: var(--text3); margin-top: 3px; line-height: 1.4; }
+
+  /* ── Section ─────────────────────────────────────── */
+  .section { margin-bottom: 2.5rem; }
+  .section-head { font-size: 10.5px; font-weight: 600; letter-spacing: 1.4px; text-transform: uppercase; color: var(--text3); margin-bottom: 1rem; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  .hint { font-size: 11px; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--text3); margin-left: 8px; opacity: 0.8; }
+
+  /* ── About ───────────────────────────────────────── */
+  .about-text { font-size: 14px; color: var(--text2); line-height: 1.8; }
+  .about-text strong { color: var(--text); font-weight: 500; }
+
+  /* ── Focus cards ─────────────────────────────────── */
+  .focus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .focus-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; }
+  .focus-title { font-size: 13px; font-weight: 500; color: var(--text); margin-bottom: 5px; display: flex; align-items: center; gap: 7px; }
+  .focus-title svg { width: 14px; height: 14px; color: var(--accent); flex-shrink: 0; }
+  .focus-desc { font-size: 12px; color: var(--text3); line-height: 1.65; }
+
+  /* ── Skills ──────────────────────────────────────── */
+  .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .skill-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 13px 15px; cursor: pointer; transition: border-color 0.15s, background 0.15s; user-select: none; }
+  .skill-card:hover { border-color: var(--border2); }
+  .skill-card.active { border-color: var(--accent); background: var(--accent-bg); }
+  .skill-card.active .skill-label { color: var(--accent); }
+  .skill-label { font-size: 12px; font-weight: 500; color: var(--text); margin-bottom: 8px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag { font-size: 11px; color: var(--text3); background: var(--surface2); border: 1px solid var(--border); border-radius: 4px; padding: 2px 7px; font-family: var(--mono); }
+  .skill-card.active .tag { background: #DBEAFE; border-color: var(--accent-border); color: var(--accent); }
+
+  /* ── Projects ────────────────────────────────────── */
+  .proj-list { display: flex; flex-direction: column; gap: 10px; }
+  .proj-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; transition: border-color 0.15s; }
+  .proj-card.open { border-color: var(--accent); }
+  .proj-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 18px; cursor: pointer; gap: 1rem; }
+  .proj-header:hover { background: var(--surface2); }
+  .proj-card.open .proj-header { background: var(--accent-bg); }
+  .proj-name { font-size: 14px; font-weight: 500; color: var(--text); }
+  .proj-stack { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 6px; }
+  .proj-stack .tag { background: var(--surface2); }
+  .proj-card.open .proj-stack .tag { background: #DBEAFE; border-color: var(--accent-border); color: #1e40af; }
+  .chevron { width: 16px; height: 16px; color: var(--text3); flex-shrink: 0; transition: transform 0.2s; }
+  .proj-card.open .chevron { transform: rotate(180deg); }
+  .proj-body { display: none; padding: 0 18px 16px; border-top: 1px solid var(--border); }
+  .proj-card.open .proj-body { display: block; }
+  .proj-desc { font-size: 13px; color: var(--text2); line-height: 1.75; padding-top: 14px; }
+  .proj-desc strong { color: var(--text); font-weight: 500; }
+  .proj-link { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--accent); margin-top: 10px; font-weight: 500; }
+  .proj-link svg { width: 12px; height: 12px; }
+  .proj-link:hover { text-decoration: underline; }
+
+  /* ── Certs ───────────────────────────────────────── */
+  .cert-list { display: flex; flex-direction: column; gap: 8px; }
+  .cert-item { display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+  .cert-badge { font-size: 10.5px; font-weight: 600; color: var(--accent); background: var(--accent-bg); border: 1px solid var(--accent-border); border-radius: 5px; padding: 3px 9px; white-space: nowrap; letter-spacing: 0.3px; }
+  .cert-text { font-size: 13px; color: var(--text2); flex: 1; }
+  .cert-date { font-size: 11px; color: var(--text3); font-family: var(--mono); white-space: nowrap; }
+
+  /* ── Footer ──────────────────────────────────────── */
+  .footer { font-size: 12px; color: var(--text3); text-align: center; padding-top: 2rem; border-top: 1px solid var(--border); }
+
+  /* ── Responsive ──────────────────────────────────── */
+  @media (max-width: 640px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .focus-grid { grid-template-columns: 1fr; }
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    .name { font-size: 1.5rem; }
+  }
+  @media (max-width: 420px) {
+    .skills-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="name">Anubhav Kumar Kesharwani</div>
+      <div class="role">Data Analyst &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; Agentic AI</div>
+      <div class="contact-row">
+        <a class="contact-chip" href="https://linkedin.com/in/anubhav-ak47" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="contact-chip" href="https://github.com/Anubhav-100" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a class="contact-chip" href="mailto:anubhavkesharwani38@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+        <a class="contact-chip" href="tel:+916387399625">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +91 6387399625
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-grid">
+    <div class="stat"><div class="stat-num">10M+</div><div class="stat-label">Records processed</div></div>
+    <div class="stat"><div class="stat-num">60%</div><div class="stat-label">Effort automated</div></div>
+    <div class="stat"><div class="stat-num">40%</div><div class="stat-label">Faster SQL queries</div></div>
+    <div class="stat"><div class="stat-num">AWS</div><div class="stat-label">Production deployed</div></div>
+  </div>
+
+  <!-- About -->
+  <div class="section">
+    <div class="section-head">About</div>
+    <p class="about-text">
+      I build end-to-end data and AI systems — from <strong>production ETL pipelines</strong> on 10M+ records to <strong>deployed ML APIs</strong> and <strong>agentic LLM workflows</strong>. My focus is bridging structured data engineering with modern AI: combining SQL, Python, and Power BI for analytics with LangChain, LLMs, and RAG pipelines for intelligent automation.<br><br>
+      Currently deepening expertise in <strong>Agentic AI</strong> — multi-agent orchestration using LangGraph, AutoGen, and CrewAI — and integrating it with RPA workflows to build systems that reason, not just execute.
+    </p>
+  </div>
+
+  <!-- Current Focus -->
+  <div class="section">
+    <div class="section-head">Current Focus</div>
+    <div class="focus-grid">
+      <div class="focus-card">
+        <div class="focus-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+          Agentic AI Systems
+        </div>
+        <div class="focus-desc">Multi-agent orchestration with LangGraph, AutoGen, CrewAI. Building agents that plan, retrieve, and act autonomously.</div>
+      </div>
+      <div class="focus-card">
+        <div class="focus-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          RAG Pipelines
+        </div>
+        <div class="focus-desc">End-to-end retrieval architecture — chunking, embeddings, vector stores, and LangChain orchestration.</div>
+      </div>
+      <div class="focus-card">
+        <div class="focus-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          Data Engineering
+        </div>
+        <div class="focus-desc">Scalable ETL pipelines, MySQL optimization, and Power BI dashboards for business-ready analytics.</div>
+      </div>
+      <div class="focus-card">
+        <div class="focus-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Intelligent Automation
+        </div>
+        <div class="focus-desc">RPA (UiPath) + GenAI hybrid pipelines — structured execution with intelligent exception handling.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="section">
+    <div class="section-head">Skills <span class="hint">— click to highlight</span></div>
+    <div class="skills-grid" id="skills-grid">
+      <div class="skill-card" onclick="toggleSkill(this)">
+        <div class="skill-label">Data & Analytics</div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">EDA</span></div>
+      </div>
+      <div class="skill-card" onclick="toggleSkill(this)">
+        <div class="skill-label">Business Intelligence</div>
+        <div class="tags"><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Streamlit</span><span class="tag">DAX</span></div>
+      </div>
+      <div class="skill-card" onclick="toggleSkill(this)">
+        <div class="skill-label">AI & Agentic</div>
+        <div class="tags"><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">RAG</span><span class="tag">LLMs</span><span class="tag">GenAI</span></div>
+      </div>
+      <div class="skill-card" onclick="toggleSkill(this)">
+        <div class="skill-label">Machine Learning</div>
+        <div class="tags"><span class="tag">Scikit-learn</span><span class="tag">FastAPI</span><span class="tag">Feature Eng.</span></div>
+      </div>
+      <div class="skill-card" onclick="toggleSkill(this)">
+        <div class="skill-label">Databases & Cloud</div>
+        <div class="tags"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">BigQuery</span><span class="tag">AWS</span><span class="tag">Docker</span></div>
+      </div>
+      <div class="skill-card" onclick="toggleSkill(this)">
+        <div class="skill-label">Data Engineering</div>
+        <div class="tags"><span class="tag">ETL Pipelines</span><span class="tag">Data Modeling</span><span class="tag">Snowflake</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="section">
+    <div class="section-head">Projects <span class="hint">— click to expand</span></div>
+    <div class="proj-list">
+
+      <div class="proj-card" id="p1">
+        <div class="proj-header" onclick="toggleProj('p1')">
+          <div>
+            <div class="proj-name">Vendor Performance Analysis</div>
+            <div class="proj-stack">
+              <span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Pandas</span><span class="tag">Power BI</span>
+            </div>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-desc">
+            End-to-end procurement analytics system for <strong>10M+ vendor records</strong>. Built a Python ETL pipeline for automated ingestion and cleaning, optimized MySQL query performance by <strong>40%</strong> through strategic indexing and query refactoring, and delivered an interactive Power BI dashboard with drill-through filters. Reduced ad-hoc data requests by 30% and manual reporting effort by 60%.
+          </div>
+          <a class="proj-link" href="https://github.com/Anubhav-100/Vendor-Performance-Analysis" target="_blank">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card" id="p2">
+        <div class="proj-header" onclick="toggleProj('p2')">
+          <div>
+            <div class="proj-name">Insurance Premium Prediction System</div>
+            <div class="proj-stack">
+              <span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">AWS</span><span class="tag">Streamlit</span>
+            </div>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-desc">
+            <strong>Production ML pipeline</strong> from training to cloud deployment. Trained regression models, wrapped predictions in a FastAPI REST API, built a Streamlit UI, containerized with Docker, and deployed to AWS. Full production cycle: model training → API → UI → containerization → live cloud endpoint.
+          </div>
+          <a class="proj-link" href="https://github.com/Anubhav-100/Insurance-Premium-Prediction" target="_blank">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card" id="p3">
+        <div class="proj-header" onclick="toggleProj('p3')">
+          <div>
+            <div class="proj-name">CAPM Financial Analytics Web App</div>
+            <div class="proj-stack">
+              <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Plotly</span><span class="tag">Streamlit</span>
+            </div>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-desc">
+            CAPM-based stock return estimator integrating <strong>10+ years of time-series data</strong> for 50+ stocks and the S&P 500 index. Reduced manual return analysis time by <strong>70%</strong> compared to spreadsheet workflows, enabling faster investment decision-making.
+          </div>
+          <a class="proj-link" href="https://github.com/Anubhav-100/CAPM-Web-Application" target="_blank">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="proj-card" id="p4">
+        <div class="proj-header" onclick="toggleProj('p4')">
+          <div>
+            <div class="proj-name">Google Trends Analysis Web App</div>
+            <div class="proj-stack">
+              <span class="tag">PyTrends</span><span class="tag">Plotly</span><span class="tag">Streamlit</span>
+            </div>
+          </div>
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="proj-body">
+          <div class="proj-desc">
+            Interactive dashboard to compare keyword trends, track regional popularity, and visualize search dynamics over time. Built with PyTrends API integration and Plotly for dynamic, real-time charting.
+          </div>
+          <a class="proj-link" href="https://github.com/Anubhav-100/Google-Trends-Analysis-Web-App" target="_blank">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Certifications -->
+  <div class="section">
+    <div class="section-head">Certifications</div>
+    <div class="cert-list">
+      <div class="cert-item">
+        <span class="cert-badge">Oracle</span>
+        <span class="cert-text">OCI Generative AI Professional — Oracle Cloud Infrastructure</span>
+        <span class="cert-date">Oct 2025</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-badge">Deloitte</span>
+        <span class="cert-text">Data Analytics Job Simulation — Deloitte Australia</span>
+        <span class="cert-date">Jul 2025</span>
+      </div>
+      <div class="cert-item">
+        <span class="cert-badge">Tata</span>
+        <span class="cert-text">Data Visualization Virtual Experience — Tata Group</span>
+        <span class="cert-date">Aug 2025</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    B.Tech Information Technology &nbsp;·&nbsp; JSS Academy of Technical Education, Noida &nbsp;·&nbsp; GPA 7.78 &nbsp;·&nbsp; Expected Jul 2026
+  </div>
+
+</div>
+
+<script>
+  function toggleProj(id) {
+    const card = document.getElementById(id);
+    card.classList.toggle('open');
+  }
+  function toggleSkill(card) {
+    const wasActive = card.classList.contains('active');
+    document.querySelectorAll('.skill-card').forEach(c => c.classList.remove('active'));
+    if (!wasActive) card.classList.add('active');
+  }
+</script>
+</body>
+</html>
