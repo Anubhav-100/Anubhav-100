@@ -1,99 +1,62 @@
-<h1 align="center">Hey, I'm Anubhav (AJ) 👋</h1>
+# Anubhav Kumar Kesharwani
 
-<p align="center">
-  <b>Data Analyst · ML Engineer · Intelligent Automation</b><br/>
-  Final-year B.Tech (IT) @ JSS Academy · Noida, India
-</p>
+**Data Analyst · AI Engineer · Agentic AI Systems**
 
-<p align="center">
-  <a href="https://linkedin.com/in/anubhav-ak47"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="mailto:anubhavkesharwani38@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <img src="https://komarev.com/ghpvc/?username=Anubhav-100&style=for-the-badge&color=0e75b6"/>
-</p>
+Final-year B.Tech (IT) · JSS Academy of Technical Education, Noida
+[LinkedIn](https://linkedin.com/in/anubhav-ak47) · [Email](mailto:anubhavkesharwani38@gmail.com)
 
 ---
 
-## 🧠 About Me
+## About
 
-I'm a data engineer and ML practitioner who builds things end-to-end — from raw CSV ingestion pipelines to deployed ML APIs on AWS. I care about making data *actually useful* for business decisions, not just technically correct.
+I build end-to-end data and AI systems — from production ETL pipelines on 10M+ records to deployed ML APIs and agentic LLM workflows. My focus is bridging structured data engineering with modern AI: combining SQL, Python, and Power BI for analytics, and LangChain, LLMs, and RAG pipelines for intelligent automation.
 
-- 🔭 Currently working on: **RAG pipelines with LangChain + Vector DBs**
-- 🛠️ Background: **RPA + Intelligent Automation (UiPath, GenAI, LangChain)**
-- 📊 Strongest in: **SQL optimization, ETL pipelines, Power BI, Python analytics**
-- 🚀 Shipped: ML models in production (FastAPI + Docker + AWS)
-- 📍 Based in Noida, open to startup roles in Delhi NCR
+Currently deepening expertise in **Agentic AI** — multi-agent orchestration with LangGraph, AutoGen, and CrewAI — and integrating it with RPA workflows to build systems that reason, not just execute.
 
 ---
 
-## 🛠️ Tech Stack
+## Core Competencies
 
-**Languages & Data**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-
-**ML & AI**
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-
-**BI & Visualization**
-![Power BI](https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
-
-**Databases & Cloud**
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
-![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=flat-square&logo=googlebigquery&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+| Area | Technologies |
+|---|---|
+| Data & Analytics | Python, SQL (Advanced), Pandas, NumPy, EDA, Statistical Analysis |
+| Business Intelligence | Power BI (DAX, Power Query), Tableau, Streamlit, Excel |
+| Machine Learning | Scikit-learn, Feature Engineering, Model Deployment |
+| AI & Agentic Systems | LangChain, LangGraph, RAG Pipelines, LLMs, GenAI, FastAPI |
+| Data Engineering | ETL Pipelines, Data Modeling, MySQL, PostgreSQL, BigQuery, Snowflake |
+| Cloud & DevOps | AWS, Docker, Git |
 
 ---
 
-## 🚀 Featured Projects
+## Selected Projects
 
-### 📦 [Vendor Performance Analysis](https://github.com/Anubhav-100/Vendor-Performance-Analysis)
-> ETL pipeline + MySQL + Power BI · 10M+ records
-
-Built an end-to-end procurement analytics system: automated CSV ingestion into MySQL, applied chunked processing for 10M+ rows, optimized queries with strategic indexing (40% faster), and delivered an interactive Power BI dashboard that cut ad-hoc data requests by 30%.
-
-### 📈 [Insurance Premium Prediction System](https://github.com/Anubhav-100/Insurance-Premium-Prediction)
-> Python · FastAPI · Docker · AWS · Streamlit
-
-Production-grade ML system: trained regression models, wrapped them in a FastAPI REST API, built a Streamlit UI, containerized with Docker, and deployed on AWS. End-to-end from model training to live cloud endpoint.
-
-### 💹 [CAPM Web Application](https://github.com/Anubhav-100/CAPM-Web-Application)
-> Python · Pandas · Plotly · Streamlit
-
-Interactive financial analytics tool for estimating expected stock returns using CAPM/beta. Integrated 10+ years of time-series data for 50+ stocks, reduced manual analysis time by ~70% vs spreadsheet workflows.
-
-### 🔍 [Google Trends Analysis Web App](https://github.com/Anubhav-100/Google-Trends-Analysis-Web-App)
-> Python · PyTrends · Plotly · Streamlit
-
-Dashboard to compare keyword trends, track regional popularity, and visualize search dynamics over time.
+**[Vendor Performance Analysis](https://github.com/Anubhav-100/Vendor-Performance-Analysis)**
+End-to-end procurement analytics system. Built a Python ETL pipeline for 10M+ vendor records, optimized MySQL query performance by 40% through indexing and query refactoring, and delivered an interactive Power BI dashboard with drill-through filters. Cut ad-hoc data requests by 30% and manual reporting effort by 60%.
+`Python` `MySQL` `Pandas` `Power BI`
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anubhav-100&show_icons=true&theme=tokyonight&hide_border=true" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anubhav-100&layout=compact&theme=tokyonight&hide_border=true" height="160"/>
-</p>
+**[Insurance Premium Prediction System](https://github.com/Anubhav-100/Insurance-Premium-Prediction)**
+Production ML pipeline from training to cloud deployment. Trained regression models, wrapped predictions in a FastAPI REST API, built a Streamlit UI, containerized with Docker, and deployed to AWS.
+`Python` `FastAPI` `Docker` `AWS` `Streamlit`
 
 ---
 
-## 🏅 Certifications
-
-- 🟠 **OCI Generative AI Professional** — Oracle Cloud Infrastructure (Oct 2025)
-- 🔵 **Data Analytics Job Simulation** — Deloitte Australia (Jul 2025)
-- 🟣 **Data Visualization** — Tata Group (Aug 2025)
+**[CAPM Financial Analytics Web App](https://github.com/Anubhav-100/CAPM-Web-Application)**
+CAPM-based stock return estimator with 10+ years of time-series data across 50+ stocks. Reduced manual return analysis time by 70% compared to spreadsheet workflows.
+`Python` `Pandas` `Plotly` `Streamlit`
 
 ---
 
-<p align="center">
-  <i>"Turning raw data into decisions — one pipeline at a time."</i>
-</p>
+## Certifications
+
+- OCI Generative AI Professional — Oracle Cloud Infrastructure (2025)
+- Data Analytics Job Simulation — Deloitte Australia (2025)
+- Data Visualization — Tata Group (2025)
+
+---
+
+## GitHub Activity
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Anubhav-100&show_icons=true&theme=default&hide_border=true&title_color=1A56DB&icon_color=1A56DB&hide=stars)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Anubhav-100&layout=compact&hide_border=true&title_color=1A56DB)
