@@ -10,6 +10,10 @@
     <a href="https://anubhav-100.github.io/Anubhav-100/"><img src="https://img.shields.io/badge/Portfolio-185FA5?style=flat-square&logo=githubpages&logoColor=white"/></a>
     &nbsp;
     <img src="https://komarev.com/ghpvc/?username=Anubhav-100&style=flat-square&color=185FA5"/>
+    &nbsp;
+    <a href="https://leetcode.com/u/Anubhav_Kesharwani/">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=white"/>
+    </a>
   </p>
 </div>
 
