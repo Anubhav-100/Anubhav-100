@@ -171,7 +171,7 @@ Final-year B.Tech (IT) building end-to-end data and AI systems — from producti
 <div align="center">
   <img src="https://img.shields.io/badge/dynamic/json?color=185FA5&label=Public%20Repos&query=public_repos&url=https://api.github.com/users/Anubhav-100&style=for-the-badge" height="28"/>
   &nbsp;
-  <img src="https://img.shields.io/badge/dynamic/json?color=185FA5&label=Total%20PRs&query=total_count&url=https://api.github.com/search/issues?q=author:Anubhav-100+type:pr&style=for-the-badge" height="28"/>
+  <img src="https://img.shields.io/badge/dynamic/json?color=185FA5&label=Total%20PRs&query=total_count&url=https%3A%2F%2Fapi.github.com%2Fsearch%2Fissues%3Fq%3Dauthor%3AAnubhav-100%2Btype%3Apr&style=for-the-badge" height="28"/>
   &nbsp;
   <img src="https://img.shields.io/badge/dynamic/json?color=185FA5&label=Followers&query=followers&url=https://api.github.com/users/Anubhav-100&style=for-the-badge" height="28"/>
 </div>
