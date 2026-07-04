@@ -179,12 +179,6 @@ Final-year B.Tech (IT) building end-to-end data and AI systems — from producti
 <br/>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anubhav-100&show_icons=true&hide_border=true&title_color=185FA5&icon_color=185FA5&hide=stars" height="200"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anubhav-100&layout=compact&hide_border=true&title_color=185FA5" height="200"/>
-</div>
-
-<div align="center">
   <img src="https://streak-stats.demolab.com?user=Anubhav-100&hide_border=true&background=00000000&ring=185FA5&fire=185FA5&currStreakLabel=185FA5" height="150"/>
 </div>
 
