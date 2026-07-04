@@ -165,16 +165,30 @@ Final-year B.Tech (IT) building end-to-end data and AI systems — from producti
 </table>
 
 ---
-
 <!-- GitHub Stats -->
 <h3>📈 GitHub Stats</h3>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Anubhav-100&show_icons=true&hide_border=true&title_color=185FA5&icon_color=185FA5&hide=stars" height="150"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anubhav-100&layout=compact&hide_border=true&title_color=185FA5" height="150"/>
+  <img src="https://img.shields.io/badge/dynamic/json?color=185FA5&label=Public%20Repos&query=public_repos&url=https://api.github.com/users/Anubhav-100&style=for-the-badge" height="28"/>
+  &nbsp;
+  <img src="https://img.shields.io/badge/dynamic/json?color=185FA5&label=Followers&query=followers&url=https://api.github.com/users/Anubhav-100&style=for-the-badge" height="28"/>
 </div>
 
+<br/>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Anubhav-100&show_icons=true&hide_border=true&title_color=185FA5&icon_color=185FA5&hide=stars&count_private=true&include_all_commits=true&show=prs_merged,prs_merged_percentage,reviews,discussions_started,discussions_answered" height="200"/>
+  &nbsp;&nbsp;
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Anubhav-100&layout=compact&hide_border=true&title_color=185FA5" height="200"/>
+</div>
+
+<div align="center">
+  <img src="https://streak-stats.demolab.com?user=Anubhav-100&hide_border=true&background=00000000&ring=185FA5&fire=185FA5&currStreakLabel=185FA5" height="150"/>
+</div>
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Anubhav-100&hide_border=true&bg_color=00000000&color=185FA5&line=185FA5&point=185FA5" width="90%"/>
+</div>
 ---
 
 <!-- Certifications -->
