@@ -179,7 +179,7 @@ Final-year B.Tech (IT) building end-to-end data and AI systems — from producti
 <br/>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=Anubhav-100&hide_border=true&background=00000000&ring=185FA5&fire=185FA5&currStreakLabel=185FA5" height="150"/>
+  <img src="https://streak-stats.demolab.com?user=Anubhav-100&hide_border=true&background=100000000&ring=185FA5&fire=185FA5&currStreakLabel=185FA5" height="150"/>
 </div>
 
 <div align="center">
